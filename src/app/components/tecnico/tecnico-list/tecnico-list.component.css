@@ -18,8 +18,12 @@ button {
   width: 25%;
   margin-top: 2.5rem;
   float: right;
+  border-radius: 20px;
+  
 }
 
 button:hover{
-  background-color: blueviolet;
+  background-color: rgba(143,0,255,1);
+  color: #FFF;
+  font-weight: bold;
 }

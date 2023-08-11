@@ -32,7 +32,11 @@ img{
 button{
   margin-top: 1.5rem;
   border-radius: 10px;
-  background: #00c4ff;
+  background: rgba(143,0,255,1);
+}
+
+button:hover{
+  background: rgba(143,0,255,0.8);
 }
 
 .icon{
