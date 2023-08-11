@@ -7,6 +7,8 @@
 .container h1{
   border: 1px solid #000;
   margin-top: 1rem;
-  padding: 1rem 10%;
+  padding: 1rem 20%;
   border-radius: 2rem;
+  background: linear-gradient(9deg, rgba(2,0,36,0.8) 0%, rgba(143,0,255,0.8) 62%);
+  color: #FFF;
 }

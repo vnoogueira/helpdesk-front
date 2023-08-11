@@ -33,3 +33,16 @@ span {
   color: white;
   background: linear-gradient(9deg, rgba(2,0,36,1) 0%, rgba(143,0,255,1) 62%);
 }
+
+.grid-container{
+  display: grid;
+  grid-template-columns: 30% 70%;
+}
+
+.grid-container button{
+  margin-top: 23px;
+}
+
+.grid-container app-header{
+  padding-right: 35rem;
+}

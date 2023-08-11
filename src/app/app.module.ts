@@ -26,6 +26,7 @@ import { MatInputModule } from '@angular/material/input';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
 import { MatCardModule } from '@angular/material/card';
+import {MatGridListModule} from '@angular/material/grid-list';
 
 //Import Components of project
 import { NavComponent } from './components/nav/nav.component';
@@ -34,6 +35,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { TecnicoListComponent } from './components/tecnico/tecnico-list/tecnico-list.component';
 import { LoginComponent } from './components/login/login.component';
 import { ToastrModule } from 'ngx-toastr';
+import { AuthInterceptorProvider } from './interceptors/auth.interceptor';
 
 
 @NgModule({
@@ -66,6 +68,7 @@ import { ToastrModule } from 'ngx-toastr';
     MatIconModule,
     MatListModule,
     MatCardModule,
+    MatGridListModule,
     ToastrModule.forRoot(
       {
         timeOut: 4000,
@@ -74,7 +77,7 @@ import { ToastrModule } from 'ngx-toastr';
       }
     )
   ],
-  providers: [],
+  providers: [AuthInterceptorProvider],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
