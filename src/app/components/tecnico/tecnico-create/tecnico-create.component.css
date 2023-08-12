@@ -35,3 +35,7 @@ mat-form-field {
 button{
   margin-top: .5rem;
 }
+
+mat-icon{
+  opacity: 0.7;
+}
