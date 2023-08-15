@@ -27,3 +27,11 @@ button:hover{
   color: #FFF;
   font-weight: bold;
 }
+
+.edit {
+  color:  rgba(143,0,255,1);
+}
+
+.delete{
+  color:  rgb(231, 75, 75);
+}
