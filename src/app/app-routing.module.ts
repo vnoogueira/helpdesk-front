@@ -38,7 +38,7 @@ const routes: Routes = [
       {
         path: 'tecnicos/delete/:id',
         component: TecnicoDeleteComponent
-      }
+      },
     ]
   },
 ];

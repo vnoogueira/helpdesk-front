@@ -27,6 +27,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
 import { MatCardModule } from '@angular/material/card';
 import {MatGridListModule} from '@angular/material/grid-list';
+import {MatDialogModule} from '@angular/material/dialog';
 
 //Import Components of project
 import { NavComponent } from './components/nav/nav.component';
@@ -40,6 +41,7 @@ import { TecnicoCreateComponent } from './components/tecnico/tecnico-create/tecn
 import { NgxMaskModule } from 'ngx-mask';
 import { TecnicoUpdateComponent } from './components/tecnico/tecnico-update/tecnico-update.component';
 import { TecnicoDeleteComponent } from './components/tecnico/tecnico-delete/tecnico-delete.component';
+import { DialogComponent } from './components/dialog/dialog.component';
 
 
 @NgModule({
@@ -52,7 +54,8 @@ import { TecnicoDeleteComponent } from './components/tecnico/tecnico-delete/tecn
     LoginComponent,
     TecnicoCreateComponent,
     TecnicoUpdateComponent,
-    TecnicoDeleteComponent
+    TecnicoDeleteComponent,
+    DialogComponent
   ],
   imports: [
     BrowserModule,
@@ -76,6 +79,7 @@ import { TecnicoDeleteComponent } from './components/tecnico/tecnico-delete/tecn
     MatListModule,
     MatCardModule,
     MatGridListModule,
+    MatDialogModule,
     NgxMaskModule.forRoot(),
     ToastrModule.forRoot(
       {

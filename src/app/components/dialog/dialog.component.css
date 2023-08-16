@@ -1,0 +1,24 @@
+.container {
+  border-radius: 12px;
+}
+
+.button {
+  display: flex;
+  float: right;
+}
+
+.yes {
+  background-color: rgba(143,0,255,1);
+  color: #FFF;
+  border-radius: 2rem;
+}
+
+.yes:hover{
+  opacity: 0.9;
+}
+
+.no {
+  background-color: rgb(231, 75, 75);
+  color: #FFF;
+  border-radius: 2rem;
+}

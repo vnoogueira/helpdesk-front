@@ -4,6 +4,8 @@ import { FormControl, Validators } from '@angular/forms';
 import { Tecnico } from 'src/app/models/tecnico';
 import { ToastrService } from 'ngx-toastr';
 import { ActivatedRoute, Router } from '@angular/router';
+import { MatDialog } from '@angular/material/dialog';
+import { DialogComponent } from '../../dialog/dialog.component';
 
 @Component({
   selector: 'app-tecnico-delete',
@@ -26,6 +28,7 @@ export class TecnicoDeleteComponent implements OnInit{
     private toastMessage: ToastrService,
     private route: Router,
     private activatedRoute: ActivatedRoute,
+    public dialog: MatDialog,
   ) { }
 
   ngOnInit(): void {
@@ -41,18 +44,25 @@ export class TecnicoDeleteComponent implements OnInit{
   }
 
   deleteTecnico(): void {
-    this.tecnicoService.delete(this.tecnico.id).subscribe(() => {
-      this.toastMessage.success('Técnico excluido com sucesso !', 'Exclusão de Cadastro');
-      this.route.navigate(['tecnicos']);
-    }, ex => {
-      if (ex.error.errors) {
-        ex.error.errors.forEach(element => {
-          this.toastMessage.error(element.message);
-        });
-      } else {
-        this.toastMessage.error(ex.error.message);
-      }
-    })
-  }
+    const dialogRef = this.dialog.open(DialogComponent, {
+      data: 'Tem certeza que deseja excluir ?',
+    });
 
+    dialogRef.afterClosed().subscribe((result : boolean) => {
+      if(result){
+        this.tecnicoService.delete(this.tecnico.id).subscribe(() => {
+          this.toastMessage.success('Técnico excluido com sucesso !', 'Exclusão de Cadastro');
+          this.route.navigate(['tecnicos']);
+        }, ex => {
+          if (ex.error.errors) {
+            ex.error.errors.forEach(element => {
+              this.toastMessage.error(element.message);
+            });
+          } else {
+            this.toastMessage.error(ex.error.message);
+          }
+        })
+      }
+    });
+  }   
 }
