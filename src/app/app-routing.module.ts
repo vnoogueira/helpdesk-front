@@ -9,6 +9,7 @@ import { TecnicoCreateComponent } from './components/tecnico/tecnico-create/tecn
 import { TecnicoUpdateComponent } from './components/tecnico/tecnico-update/tecnico-update.component';
 import { TecnicoDeleteComponent } from './components/tecnico/tecnico-delete/tecnico-delete.component';
 import { ClienteListComponent } from './components/cliente/cliente-list/cliente-list.component';
+import { ClienteUpdateComponent } from './components/cliente/cliente-update/cliente-update.component';
 
 const routes: Routes = [
   {
@@ -42,7 +43,11 @@ const routes: Routes = [
       },
       {
         path: 'clientes',
-        component:ClienteListComponent
+        component: ClienteListComponent
+      },
+      {
+        path: 'clientes/update/:id',
+        component: ClienteUpdateComponent
       }
     ]
   },

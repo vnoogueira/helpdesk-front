@@ -16,5 +16,13 @@ export class ClienteService {
   findAllClient() : Observable<Cliente[]>{
     return this.httpCliente.get<Cliente[]>(`${API_CONFIG.baseUrl}/clientes`);
   }
+
+  findClientById(id : number) : Observable<Cliente> {
+    return this.httpCliente.get<Cliente>(`${API_CONFIG.baseUrl}/clientes/${id}`);
+  }
+
+  updateClient(cliente : Cliente) : Observable<Cliente>{
+    return this.httpCliente.put<Cliente>(`${API_CONFIG.baseUrl}/clientes/${cliente.id}`, cliente);
+  }
   
 }
