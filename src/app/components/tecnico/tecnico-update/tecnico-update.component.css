@@ -34,6 +34,7 @@ mat-form-field {
 
 button{
   margin-top: .5rem;
+  border-radius: 2rem;
 }
 
 mat-icon{

@@ -1,7 +1,7 @@
+import { Cliente } from './../models/cliente';
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-import { Cliente } from '../models/cliente';
 import { API_CONFIG } from '../config/api.config';
 
 @Injectable({
@@ -28,5 +28,8 @@ export class ClienteService {
   createClient(cliente : Cliente) : Observable<Cliente>{
     return this.httpCliente.post<Cliente>(`${API_CONFIG.baseUrl}/clientes`, cliente);
   }
-  
+
+  deleteCliente(id : any) : Observable<Cliente>{
+    return this.httpCliente.delete<Cliente>(`${API_CONFIG.baseUrl}/clientes/${id}`);
+  }  
 }

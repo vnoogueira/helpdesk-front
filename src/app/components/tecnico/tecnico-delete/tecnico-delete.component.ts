@@ -12,7 +12,7 @@ import { DialogComponent } from '../../dialog/dialog.component';
   templateUrl: './tecnico-delete.component.html',
   styleUrls: ['./tecnico-delete.component.css']
 })
-export class TecnicoDeleteComponent implements OnInit{
+export class TecnicoDeleteComponent implements OnInit {
   tecnico: Tecnico = {
     id: '',
     nome: '',
@@ -48,8 +48,8 @@ export class TecnicoDeleteComponent implements OnInit{
       data: `Tem certeza que deseja excluir o técnico ${this.tecnico.nome} ?`,
     });
 
-    dialogRef.afterClosed().subscribe((result : boolean) => {
-      if(result){
+    dialogRef.afterClosed().subscribe((result: boolean) => {
+      if (result) {
         this.tecnicoService.delete(this.tecnico.id).subscribe(() => {
           this.toastMessage.success('Técnico excluido com sucesso !', 'Exclusão de Cadastro');
           this.route.navigate(['tecnicos']);
@@ -64,5 +64,5 @@ export class TecnicoDeleteComponent implements OnInit{
         })
       }
     });
-  }   
+  }
 }
