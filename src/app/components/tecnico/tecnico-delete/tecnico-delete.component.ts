@@ -45,7 +45,7 @@ export class TecnicoDeleteComponent implements OnInit{
 
   deleteTecnico(): void {
     const dialogRef = this.dialog.open(DialogComponent, {
-      data: 'Tem certeza que deseja excluir ?',
+      data: `Tem certeza que deseja excluir o técnico ${this.tecnico.nome} ?`,
     });
 
     dialogRef.afterClosed().subscribe((result : boolean) => {

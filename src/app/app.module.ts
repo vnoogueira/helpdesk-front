@@ -42,6 +42,7 @@ import { NgxMaskModule } from 'ngx-mask';
 import { TecnicoUpdateComponent } from './components/tecnico/tecnico-update/tecnico-update.component';
 import { TecnicoDeleteComponent } from './components/tecnico/tecnico-delete/tecnico-delete.component';
 import { DialogComponent } from './components/dialog/dialog.component';
+import { ClienteListComponent } from './components/cliente/cliente-list/cliente-list.component';
 
 
 @NgModule({
@@ -55,7 +56,8 @@ import { DialogComponent } from './components/dialog/dialog.component';
     TecnicoCreateComponent,
     TecnicoUpdateComponent,
     TecnicoDeleteComponent,
-    DialogComponent
+    DialogComponent,
+    ClienteListComponent
   ],
   imports: [
     BrowserModule,

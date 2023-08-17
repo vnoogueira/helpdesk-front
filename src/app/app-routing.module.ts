@@ -8,6 +8,7 @@ import { AuthGuard } from './auth/auth.guard';
 import { TecnicoCreateComponent } from './components/tecnico/tecnico-create/tecnico-create.component';
 import { TecnicoUpdateComponent } from './components/tecnico/tecnico-update/tecnico-update.component';
 import { TecnicoDeleteComponent } from './components/tecnico/tecnico-delete/tecnico-delete.component';
+import { ClienteListComponent } from './components/cliente/cliente-list/cliente-list.component';
 
 const routes: Routes = [
   {
@@ -39,6 +40,10 @@ const routes: Routes = [
         path: 'tecnicos/delete/:id',
         component: TecnicoDeleteComponent
       },
+      {
+        path: 'clientes',
+        component:ClienteListComponent
+      }
     ]
   },
 ];
