@@ -44,6 +44,7 @@ import { TecnicoDeleteComponent } from './components/tecnico/tecnico-delete/tecn
 import { DialogComponent } from './components/dialog/dialog.component';
 import { ClienteListComponent } from './components/cliente/cliente-list/cliente-list.component';
 import { CienteUpdateComponent } from './components/cliente/ciente-update/ciente-update.component';
+import { ClienteUpdateComponent } from './components/cliente/cliente-update/cliente-update.component';
 
 
 @NgModule({
@@ -59,7 +60,8 @@ import { CienteUpdateComponent } from './components/cliente/ciente-update/ciente
     TecnicoDeleteComponent,
     DialogComponent,
     ClienteListComponent,
-    CienteUpdateComponent
+    CienteUpdateComponent,
+    ClienteUpdateComponent
   ],
   imports: [
     BrowserModule,
