@@ -2,7 +2,7 @@
   id?: any;
   dataAbertura: string;
   dataFechamento: string;
-  prioridade: string;
+  prioridades: string;
   status: string;
   titulo: string;
   descricao: string;

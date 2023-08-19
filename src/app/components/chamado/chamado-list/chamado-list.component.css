@@ -6,6 +6,13 @@
   margin-bottom: auto;
 }
 
+h1{
+  text-align: center;
+  margin-bottom: 2rem;
+  font-style: italic;
+  letter-spacing: 2px
+}
+
 table {
   width: 100%;
 }
@@ -19,7 +26,6 @@ button {
   margin-top: 2.5rem;
   float: right;
   border-radius: 2rem;
-  
 }
 
 button:hover{

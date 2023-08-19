@@ -21,13 +21,14 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatButtonModule } from '@angular/material/button';
 import { MatSelectModule } from '@angular/material/select';
 import { MatTableModule } from '@angular/material/table';
+import { MatSortModule } from '@angular/material/sort';
 import { MatRadioModule } from '@angular/material/radio';
 import { MatInputModule } from '@angular/material/input';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
 import { MatCardModule } from '@angular/material/card';
-import {MatGridListModule} from '@angular/material/grid-list';
-import {MatDialogModule} from '@angular/material/dialog';
+import { MatGridListModule } from '@angular/material/grid-list';
+import { MatDialogModule } from '@angular/material/dialog';
 
 //Import Components of project
 import { NavComponent } from './components/nav/nav.component';
@@ -47,6 +48,7 @@ import { ClienteUpdateComponent } from './components/cliente/cliente-update/clie
 import { ClienteCreateComponent } from './components/cliente/cliente-create/cliente-create.component';
 import { ClienteDeleteComponent } from './components/cliente/cliente-delete/cliente-delete.component';
 import { ChamadoListComponent } from './components/chamado/chamado-list/chamado-list.component';
+
 
 
 @NgModule({
@@ -85,6 +87,7 @@ import { ChamadoListComponent } from './components/chamado/chamado-list/chamado-
     MatInputModule,
     MatRadioModule,
     MatTableModule,
+    MatSortModule,
     MatIconModule,
     MatListModule,
     MatCardModule,
@@ -98,7 +101,7 @@ import { ChamadoListComponent } from './components/chamado/chamado-list/chamado-
         progressBar: true
       }
     ),
-    
+
   ],
   providers: [AuthInterceptorProvider],
   bootstrap: [AppComponent]
