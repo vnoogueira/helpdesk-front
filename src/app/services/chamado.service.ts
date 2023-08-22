@@ -13,8 +13,11 @@ export class ChamadoService {
     private httpCliente : HttpClient,
   ) { }
 
-
   findAllChamado() : Observable<Chamado[]> {
     return this.httpCliente.get<Chamado[]>(`${API_CONFIG.baseUrl}/chamados`);
+  }
+
+  insertChamado(body : Chamado) : Observable<Chamado> {
+    return this.httpCliente.post<Chamado>(`${API_CONFIG.baseUrl}/chamados`, body);
   }
 }
