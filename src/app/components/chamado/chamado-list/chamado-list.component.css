@@ -42,12 +42,12 @@ button:hover{
   opacity: 0.6;
 }
 
-.delete{
+.visibility{
   color:  rgb(231, 75, 75);
 }
 
-.delete:hover{
-  opacity: 0.6;
+.visibility:hover{
+  opacity: 0.8;
 }
 
 mat-radio-group{
