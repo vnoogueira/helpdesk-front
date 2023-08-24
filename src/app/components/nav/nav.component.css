@@ -2,6 +2,14 @@
   height: 100%;
 }
 
+mat-toolbar{
+  background: linear-gradient(9deg, rgba(2,0,36,1) 0%, rgba(143,0,255,1) 62%);
+}
+
+.grid-container{
+  margin-top: -23px;
+}
+
 .sidenav {
   width: 13rem;
   color: white;
