@@ -2,14 +2,13 @@
   <mat-toolbar>
     <div class="sidenav-content">
       <div class="grid-container">
-        <button class="menu mat-elevation-z8" (click)="drawer.toggle()" mat-icon-button>
-          <mat-icon>menu</mat-icon>
+        <button class="menu mat-elevation-z8" (click)="changeIcons();  drawer.toggle()" mat-icon-button>
+          <mat-icon id="mat-icon">menu</mat-icon>
         </button>
       </div>
     </div>
   </mat-toolbar>
   <mat-drawer #drawer class="sidenav" mode="side">
-    <button type="button" class="btn-close" data-bs-dismiss="drawer-container" aria-label="Close"></button>
     <img src="assets/img/side-image.svg" alt="Imagem de navegação" />
     <mat-nav-list class="nav-list">
       <a mat-list-item routerLink="home">

@@ -2,55 +2,63 @@
   height: 100%;
 }
 
-mat-toolbar{
-  background: linear-gradient(9deg, rgba(2,0,36,1) 0%, rgba(143,0,255,1) 62%);
+mat-toolbar {
+  background: linear-gradient(
+    9deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(143, 0, 255, 1) 62%
+  );
 }
 
-.grid-container{
+.grid-container {
   margin-top: -23px;
 }
 
 .sidenav {
   width: 13rem;
   color: white;
-  background: linear-gradient(9deg, rgba(2,0,36,1) 0%, rgba(143,0,255,1) 62%);
+  background: linear-gradient(
+    9deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(143, 0, 255, 1) 62%
+  );
 }
 
 img {
   width: 100%;
   height: 7rem;
-  margin: .8rem auto 1rem auto;
+  margin: 0.8rem auto 1rem auto;
 }
 
 span {
   color: white;
 }
 
-.aligned-with-icon{
+.aligned-with-icon {
   position: absolute;
   margin-top: 1px;
 }
 
 .sidenav i {
-  margin-right: .6rem;
+  margin-right: 0.6rem;
   color: white;
 }
 
 .menu {
   margin: 1rem 0 0 1rem;
   color: white;
-  background: rgba(143,0,255,1);
+  background: rgba(143, 0, 255, 1);
 }
 
-.grid-container{
+.grid-container {
   display: grid;
   grid-template-columns: 30% 70%;
 }
 
-.grid-container button{
+.grid-container button {
   margin-top: 23px;
 }
 
-.grid-container app-header{
+.grid-container app-header {
   padding-right: 35rem;
 }
